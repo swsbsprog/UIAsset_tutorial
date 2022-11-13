@@ -1,10 +1,12 @@
-using System.Collections.Generic;
+﻿using System.Collections.Generic;
 using UnityEngine;
 
 namespace NaughtyAttributes.Test
 {
     public class ReorderableListTest : MonoBehaviour
     {
+        public int[] intArray1;
+        public GameObject[] gameObjectsList1;
         [ReorderableList]
         public int[] intArray;
 

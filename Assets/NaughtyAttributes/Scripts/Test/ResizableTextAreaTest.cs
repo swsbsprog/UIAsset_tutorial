@@ -4,6 +4,11 @@ namespace NaughtyAttributes.Test
 {
     public class ResizableTextAreaTest : MonoBehaviour
     {
+        public string defaultText0;
+
+        [TextArea]
+        public string defaultText1;
+
         [ResizableTextArea]
         public string text0;
 

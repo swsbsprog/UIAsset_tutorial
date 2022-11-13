@@ -1,4 +1,4 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace NaughtyAttributes.Test
 {
@@ -8,10 +8,30 @@ namespace NaughtyAttributes.Test
         [OnValueChanged("OnValueChangedMethod2")]
         public int int0;
 
+
+        public int Power
+        {
+            get => power;
+            set
+            {
+                print($"power:{power} > {value}");
+                power = value;
+            }
+        }
+        public int power;
+
+        [Button]
+        public void MyTest()
+        {
+            int0 = 123;
+            Power = 1;
+        }
+
         private void OnValueChangedMethod1()
         {
             Debug.LogFormat("int0: {0}", int0);
         }
+
 
         private void OnValueChangedMethod2()
         {

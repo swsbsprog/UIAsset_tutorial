@@ -4,6 +4,10 @@ namespace NaughtyAttributes.Test
 {
     public class ShowNativePropertyTest : MonoBehaviour
     {
+        public int myVariable; // 변수
+        [ShowNativeProperty]
+        public int MyVariable1 => myVariable * 2; // 속성
+
         [ShowNativeProperty]
         private Transform Transform
         {

@@ -1,9 +1,13 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace NaughtyAttributes.Test
 {
     public class ReadOnlyTest : MonoBehaviour
     {
+        [ShowNonSerializedField]
+        private int readOnlyInt3 = 5;
+        private int readOnlyInt2 = 5;
+        public int readOnlyInt1 = 5;
         [ReadOnly]
         public int readOnlyInt = 5;
 

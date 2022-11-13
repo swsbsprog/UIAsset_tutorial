@@ -1,9 +1,10 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace NaughtyAttributes.Test
 {
     public class ShowAssetPreviewTest : MonoBehaviour
     {
+        public Sprite sprite1;
         [ShowAssetPreview]
         public Sprite sprite0;
 

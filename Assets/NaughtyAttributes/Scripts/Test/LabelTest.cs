@@ -1,9 +1,11 @@
-using UnityEngine;
+﻿using UnityEngine;
 
 namespace NaughtyAttributes.Test
 {
     public class LabelTest : MonoBehaviour
     {
+        [Label("공격력")]
+        public int MyInt;
         [Label("Label 0")]
         public int int0;
 

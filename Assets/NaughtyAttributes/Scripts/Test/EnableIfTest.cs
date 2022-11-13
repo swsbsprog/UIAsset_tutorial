@@ -1,4 +1,4 @@
-using System;
+﻿using System;
 using UnityEngine;
 
 namespace NaughtyAttributes.Test
@@ -112,8 +112,8 @@ namespace NaughtyAttributes.Test
     [Flags]
     public enum EnableIfEnumFlag
     {
-        Flag0 = 1,
-        Flag1 = 2,
+        Flag0 = 1, // 0x00001
+        Flag1 = 2, // 0x00010  
         Flag2 = 4,
         Flag3 = 8
     }

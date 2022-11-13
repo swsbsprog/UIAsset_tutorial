@@ -4,12 +4,12 @@ namespace NaughtyAttributes.Test
 {
     public class BoxGroupTest : MonoBehaviour
     {
-        [BoxGroup("Integers")]
+        [BoxGroup("MyGroup")]
         public int int0;
         [BoxGroup("Integers")]
         public int int1;
 
-        [BoxGroup("Floats")]
+        [BoxGroup("MyGroup")]
         public float float0;
         [BoxGroup("Floats")]
         public float float1;
