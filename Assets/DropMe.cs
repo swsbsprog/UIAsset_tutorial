@@ -1,10 +1,10 @@
 ﻿using UnityEngine;
 using UnityEngine.EventSystems;
 
-public class DropMe : MonoBehaviour, IDragHandler
+public class DropMe : MonoBehaviour, IDropHandler
 {
-    public void OnDrag(PointerEventData eventData)
+    public void OnDrop(PointerEventData eventData)
     {
-        transform.position = eventData.position;
+        print(eventData);
     }
 }
