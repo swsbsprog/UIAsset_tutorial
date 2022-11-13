@@ -9,6 +9,7 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
     private GameObject m_DraggingIcon;
     private RectTransform m_DraggingPlane;
+    public Image image;
 
     public void OnBeginDrag(PointerEventData eventData)
     {
@@ -25,7 +26,7 @@ public class DragMe : MonoBehaviour, IBeginDragHandler, IDragHandler, IEndDragHa
 
         var image = m_DraggingIcon.AddComponent<Image>();
 
-        image.sprite = GetComponent<Image>().sprite;
+        image.sprite = this.image.sprite;
         image.SetNativeSize();
         image.raycastTarget = false;
 
